@@ -71,6 +71,14 @@ export default function Home() {
           >
             Deschide Tutoriatul 1
           </a>
+		  <a
+            href={useBaseUrl('materiale/tutoriat3.pdf')}
+            target="_blank"
+            className="button button--primary"
+            style={{ textDecoration: 'none', fontWeight: 'bold' }}
+          >
+            Deschide Tutoriatul 3
+          </a>
         </div>
 
         {/* Card Resurse */}
