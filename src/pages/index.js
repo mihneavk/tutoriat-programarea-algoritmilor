@@ -40,7 +40,7 @@ export default function Home() {
           Materiale și resurse pentru aprofundarea algoritmicii
         </p>
 
-        {/* Card Materiale */}
+        {/* Card Materiale (Corectat) */}
         <div
           style={{
             background: 'var(--ifm-background-surface-color)',
@@ -62,24 +62,27 @@ export default function Home() {
             e.currentTarget.style.boxShadow = '0 4px 10px rgba(0,0,0,0.05)';
           }}
         >
-          <h2 style={{ marginBottom: '1rem' }}>📘 Materiale</h2>
-          <a
-            href={useBaseUrl('materiale/tutoriat1.pdf')}
-            target="_blank"
-            className="button button--primary"
-            style={{ textDecoration: 'none', fontWeight: 'bold' }}
-          >
-            Deschide Tutoriatul 1
-          </a>
-		  <br>
-		  <a
-            href={useBaseUrl('materiale/tutoriat3.pdf')}
-            target="_blank"
-            className="button button--primary"
-            style={{ textDecoration: 'none', fontWeight: 'bold' }}
-          >
-            Deschide Tutoriatul 3
-          </a>
+          <h2 style={{ marginBottom: '1.5rem' }}>📘 Materiale</h2>
+          
+          {/* Container pentru butoane */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <a
+              href={useBaseUrl('materiale/tutoriat1.pdf')}
+              target="_blank"
+              className="button button--primary"
+              style={{ textDecoration: 'none', fontWeight: 'bold' }}
+            >
+              Deschide Tutoriatul 1
+            </a>
+            <a
+              href={useBaseUrl('materiale/tutoriat3.pdf')}
+              target="_blank"
+              className="button button--primary"
+              style={{ textDecoration: 'none', fontWeight: 'bold' }}
+            >
+              Deschide Tutoriatul 3
+            </a>
+          </div>
         </div>
 
         {/* Card Resurse */}
@@ -103,13 +106,12 @@ export default function Home() {
             e.currentTarget.style.boxShadow = '0 4px 10px rgba(0,0,0,0.05)';
           }}
         >
-          {/* Am schimbat titlul și emoji-ul */}
           <h2 style={{ marginBottom: '1.5rem' }}>📚 Resurse</h2>
           
-          {/* Am adăugat un container pentru butoane */}
+          {/* Container pentru butoane */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <a
-              href="https://github.com/DariusBuhai/FMI-Unibuc/tree/main/Year%20I/Semester%201/PA"
+              href="https.github.com/DariusBuhai/FMI-Unibuc/tree/main/Year%20I/Semester%201/PA"
               target="_blank"
               className="button button--secondary" // Buton stil secundar
               style={{ textDecoration: 'none', fontWeight: 'bold' }}
@@ -117,7 +119,7 @@ export default function Home() {
               Materiale clasă
             </a>
             <a
-              href="https://github.com/andrachiritoiu/Tutoriat-Proramarea-Algoritmilor/tree/main"
+              href="https.github.com/andrachiritoiu/Tutoriat-Proramarea-Algoritmilor/tree/main"
               target="_blank"
               className="button button--secondary" // Buton stil secundar
               style={{ textDecoration: 'none', fontWeight: 'bold' }}
