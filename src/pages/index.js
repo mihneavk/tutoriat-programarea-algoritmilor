@@ -73,7 +73,7 @@ export default function Home() {
           </a>
         </div>
 
-        {/* Card Exerciții Rezolvate */}
+        {/* Card Resurse */}
         <div
           style={{
             background: 'var(--ifm-background-surface-color)',
@@ -94,10 +94,28 @@ export default function Home() {
             e.currentTarget.style.boxShadow = '0 4px 10px rgba(0,0,0,0.05)';
           }}
         >
-          <h2 style={{ marginBottom: '1rem' }}>🧩 Exerciții Rezolvate</h2>
-          <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-            {/* Exemplu de cum poți adăuga un exercițiu nou */}
-          </ul>
+          {/* Am schimbat titlul și emoji-ul */}
+          <h2 style={{ marginBottom: '1.5rem' }}>📚 Resurse</h2>
+          
+          {/* Am adăugat un container pentru butoane */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <a
+              href="https://github.com/DariusBuhai/FMI-Unibuc/tree/main/Year%20I/Semester%201/PA"
+              target="_blank"
+              className="button button--secondary" // Buton stil secundar
+              style={{ textDecoration: 'none', fontWeight: 'bold' }}
+            >
+              Materiale clasă
+            </a>
+            <a
+              href="https://github.com/andrachiritoiu/Tutoriat-Proramarea-Algoritmilor/tree/main"
+              target="_blank"
+              className="button button--secondary" // Buton stil secundar
+              style={{ textDecoration: 'none', fontWeight: 'bold' }}
+            >
+              Materiale tutoriat
+            </a>
+          </div>
         </div>
 
         {/* Footer cu link GitHub */}
