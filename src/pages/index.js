@@ -71,6 +71,7 @@ export default function Home() {
           >
             Deschide Tutoriatul 1
           </a>
+		  <br>
 		  <a
             href={useBaseUrl('materiale/tutoriat3.pdf')}
             target="_blank"
