@@ -40,7 +40,7 @@ export default function Home() {
           Materiale și resurse pentru aprofundarea algoritmicii
         </p>
 
-        {/* Card Materiale (Corectat) */}
+        {/* Card Materiale */}
         <div
           style={{
             background: 'var(--ifm-background-surface-color)',
@@ -64,7 +64,6 @@ export default function Home() {
         >
           <h2 style={{ marginBottom: '1.5rem' }}>📘 Materiale</h2>
           
-          {/* Container pentru butoane */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <a
               href={useBaseUrl('materiale/tutoriat1.pdf')}
@@ -85,7 +84,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Card Resurse */}
+        {/* Card Resurse (Corectat) */}
         <div
           style={{
             background: 'var(--ifm-background-surface-color)',
@@ -108,20 +107,19 @@ export default function Home() {
         >
           <h2 style={{ marginBottom: '1.5rem' }}>📚 Resurse</h2>
           
-          {/* Container pentru butoane */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <a
-              href="https.github.com/DariusBuhai/FMI-Unibuc/tree/main/Year%20I/Semester%201/PA"
+              href="https://github.com/DariusBuhai/FMI-Unibuc/tree/main/Year%20I/Semester%201/PA"
               target="_blank"
-              className="button button--secondary" // Buton stil secundar
+              className="button button--secondary"
               style={{ textDecoration: 'none', fontWeight: 'bold' }}
             >
               Materiale clasă
             </a>
             <a
-              href="https.github.com/andrachiritoiu/Tutoriat-Proramarea-Algoritmilor/tree/main"
+              href="https://github.com/andrachiritoiu/Tutoriat-Proramarea-Algoritmilor/tree/main"
               target="_blank"
-              className="button button--secondary" // Buton stil secundar
+              className="button button--secondary"
               style={{ textDecoration: 'none', fontWeight: 'bold' }}
             >
               Materiale tutoriat
